@@ -1,8 +1,15 @@
 import React from 'react';
 
 const Head = props => (
-  <div>
-    <h1>基本資料</h1>
+  <div className="panel panel-info">
+    <div className="panel-heading">
+		<h3>
+			<span className="glyphicon glyphicon-file"></span>
+			<font>基本資料</font>
+		</h3>
+	</div>
+	<div className="panel-body">
+	<div className="bs-callout bs-callout-info">
     <ul>
 		{props.head.map(
 			(item, i) =>
@@ -13,6 +20,8 @@ const Head = props => (
 			)
 		}
     </ul>
+	</div>
+	</div>
   </div>
 );
 

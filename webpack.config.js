@@ -12,8 +12,7 @@ module.exports = {
     './src/index.js',
   ],
   output: {
-    path: `${__dirname}/dist`,
-    filename: 'index_bundle.js',
+    filename: 'bundle.js',
   },
   module: {
     preLoaders: [
@@ -31,7 +30,10 @@ module.exports = {
     },{
       test: /\.css$/,
       loaders: ['style', 'css']
-    }],
+    },{
+		test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+		loader: 'url-loader'
+	}],
   },
   devServer: {
     inline: true,

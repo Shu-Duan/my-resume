@@ -6,11 +6,13 @@ import ExpContainer from '../../containers/ExpContainer';
 import SkillContainer from '../../containers/SkillContainer';
 
 const Main = () => (
-  <div>
+  <div className="container">
+	<div className="panel-group">
     <HeadContainer />
     <EduContainer />
     <ExpContainer />
     <SkillContainer />
+	</div>
   </div>
 );
 

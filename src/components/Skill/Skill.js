@@ -2,22 +2,31 @@ import React from 'react';
 import { Link, IndexLink } from 'react-router';
 
 const Skill = props => (
-  <div>
-    <h1>技能</h1>
+  <div className="panel panel-info">
+	<div className="panel-heading">
+    <h3>
+		<span className="glyphicon glyphicon-wrench"></span>
+		<font>技能</font>
+	</h3>
+	</div>
+	<div className="panel-body">
     <ul>
 		{props.skill.map(
 			(item, i) =>
-				<div className="col-xs-12 col-sm-6 col-md-4" key={i}>
-					<b key={item.name}>{item.name}</b>
+				<div className="col-xs-12 col-md-4" key={i}>
+				<div className="bs-callout bs-callout-info fix-height-200">
+					<b className="panel-title-l1" key={item.name}>{item.name}</b>
 					<ol key={item.list}>
 						{item.list.map((l,i2) =>
 							<li key={i2}>{l}</li>
 						)}
 					</ol>
+					</div>
 				</div>
 			)
 		}
     </ul>
+	</div>
   </div>
 );
 

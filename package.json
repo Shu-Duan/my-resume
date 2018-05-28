@@ -8,18 +8,19 @@
   },
   "author": "eric fan",
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "material-ui": "^0.15.4",
     "react": "^15.3.0",
+    "react-bootstrap": "^0.32.1",
     "react-dom": "^15.3.0",
     "react-redux": "^4.4.5",
-    "react-tap-event-plugin": "^1.0.0",
-    "react-bootstrap": "^0.32.1",
     "react-router": "^2.6.1",
+    "react-tap-event-plugin": "^1.0.0",
     "redux": "^3.5.2",
+    "redux-actions": "^2.4.0",
     "redux-immutable": "^3.0.7",
     "redux-thunk": "^2.1.0",
-    "bootstrap": "^3.3.7",
-    "whatwg-fetch": "^1.0.0",
-    "material-ui": "^0.15.4"
+    "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.13.2",
@@ -38,6 +39,7 @@
     "html-webpack-plugin": "^2.22.0",
     "redux-logger": "^2.6.1",
     "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   }
