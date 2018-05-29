@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Head = props => (
-  <div className="panel panel-info">
+  <div className="panel panel-warning">
     <div className="panel-heading">
 		<h3>
 			<span className="glyphicon glyphicon-file"></span>

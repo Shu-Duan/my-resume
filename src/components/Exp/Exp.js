@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, IndexLink } from 'react-router';
 
 const Exp = props => (
-  <div className="panel panel-info">
+  <div className="panel panel-warning">
 	<div className="panel-heading">
     <h3>
 		<span className="glyphicon glyphicon-briefcase"></span>
