@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "start": "webpack-dev-server --colors --inline --content-base .",
-	"build": "webpack",
+	"build": "webpack --mode production",
     "deploy": "gh-pages -d build"
   },
   "author": "eric fan",
