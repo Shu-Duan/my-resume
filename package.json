@@ -4,9 +4,11 @@
   "description": "react_resume",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "webpack-dev-server --colors --inline --content-base ."
+    "start": "webpack-dev-server --colors --inline --content-base .",
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "author": "eric fan",
+  "homepage": "https://shu-duan.github.io/my-resume/",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "material-ui": "^0.15.4",
@@ -36,6 +38,7 @@
     "eslint-plugin-import": "^1.13.0",
     "eslint-plugin-jsx-a11y": "^2.1.0",
     "eslint-plugin-react": "^6.1.0",
+    "gh-pages": "^1.2.0",
     "html-webpack-plugin": "^2.22.0",
     "redux-logger": "^2.6.1",
     "style-loader": "^0.21.0",
