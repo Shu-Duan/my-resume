@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   template: `${__dirname}/src/index.html`,
-  filename: './build/index.html',
+  filename: 'index.html',
   inject: 'body',
 });
 
@@ -12,7 +12,8 @@ module.exports = {
     './src/index.js',
   ],
   output: {
-    filename: './build/bundle.js',
+    filename: 'bundle.js',
+	path: './build'
   },
   module: {
     preLoaders: [
